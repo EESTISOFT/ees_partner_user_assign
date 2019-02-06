@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO -->
+
+<record id="ees_partner_user_assign.multi_saleperson_server_action" model="ir.actions.server">
+    <field name="name">Assign/Unassign User</field>
+	<field name="type">ir.actions.server</field>
+    <field name="model_id" ref="model_ees_partner_user_assign_multi_saleperson_action"/>
+	<field name="state">code</field>
+    <field name="code">action=model.create_wizard()</field>
+	<field name="binding_model_id" ref="base.model_res_partner" />
+    <field name="key2">client_action_multi</field>
+</record>
+
+<record id="ees_partner_user_assign.multi_saleperson_action_form" model="ir.ui.view">
+<field name="name">ees_partner_user_assign.multi_saleperson_action_form</field>
+<field name="model">ees_partner_user_assign.multi_saleperson_action</field>
+<field eval="18" name="priority"/>
+<field name="arch" type="xml"><form create="false"><sheet><group>
+<field name="user" />
+<field name="partners">
+	<tree>
+		<field name="name"/>
+		<field name="user_id"/>
+	</tree>
+</field>
+</group><footer>
+	<button name="do_tag_all" string="Assign" type="object" class="btn-primary" />
+	<button name="do_untag_all" string="Unassign" type="object" class="btn-primary" />
+</footer></sheet></form></field></record>
+</odoo>

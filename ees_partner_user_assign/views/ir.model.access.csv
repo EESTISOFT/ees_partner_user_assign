@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ees_partner_user_assign.multi_saleperson_action,ees_partner_user_assign.multi_saleperson_action,model_ees_partner_user_assign_multi_saleperson_action,base.group_user,1,1,1,1
