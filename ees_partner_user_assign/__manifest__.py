@@ -11,7 +11,7 @@ Adds massive Salesperson on partners
 	
 Made with love.
     """,
-    'images':['thumbs.png'],
+    'images':['thumb.png'],
 	'depends': ['base','contacts'],
     'data': ['views/ees_partner_user_assign.xml','views/ir.model.access.csv'],
     'installable': True,
