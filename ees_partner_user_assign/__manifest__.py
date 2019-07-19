@@ -6,13 +6,13 @@
     'website': 'https://eestisoft.com',
     'sequence': 2,
     'summary': 'Adds group ',
+    'images':['static/description/thumb.png'],
     'description': """
 Adds massive Salesperson on partners
 	
 Made with love.
     """,
-    'images':['thumb.png'],
-	'depends': ['base','contacts'],
+    'depends': ['base','contacts'],
     'data': ['views/ees_partner_user_assign.xml','views/ir.model.access.csv'],
     'installable': True,
     'application': True,
