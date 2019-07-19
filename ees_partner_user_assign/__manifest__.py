@@ -6,6 +6,7 @@
     'website': 'https://eestisoft.com',
     'sequence': 2,
     'summary': 'Adds group ',
+    'images':['static/description/thumb.png'],
     'description': """
 Adds massive Salesperson on partners
 	
